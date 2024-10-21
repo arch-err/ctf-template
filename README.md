@@ -10,7 +10,4 @@
 # Challenges
 **Flags:** (x/{{ challengeCount }})
 
-## Forensics
-## Web
-## Pwn
-## Misc
+- [ ] [{{ challengeName }}](challenges/{{ challengeName }})
