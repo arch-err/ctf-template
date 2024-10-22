@@ -1,13 +1,11 @@
 ![logo](assets/logo.png)
+{{ $values := (datasource "values") }}
 
-# {{ name }} 2024
-- {{ upstreamChallengeURL }}
+# {{ $values.general.ctf.name }} 2024
+{{- range $values.general.ctf.urls }}
+- {{ . }}
+{{- end }}
 
-## Description
-
-*{{ description }}*
+*{{ $values.general.ctf.description }}*
 
 # Challenges
-**Flags:** (x/{{ challengeCount }})
-
-- [ ] [{{ challengeName }}](challenges/{{ challengeName }})
