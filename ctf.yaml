@@ -7,3 +7,4 @@ general:
       - {{ .Env.CTF_URL }}
     repo:
       URL: {{ .Env.REPO_URL }}
+challenges: {}
