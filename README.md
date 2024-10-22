@@ -1,7 +1,7 @@
 ![logo](assets/logo.png)
 {{ $values := (datasource "values") }}
 
-# {{ $values.general.ctf.name }} 2024
+# {{ $values.general.ctf.name }}
 {{- range $values.general.ctf.urls }}
 - {{ . }}
 {{- end }}
