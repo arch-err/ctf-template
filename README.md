@@ -10,8 +10,12 @@
 *{{ $values.general.ctf.description }}*
 
 # Results
-**Username:**
-**Team:**
+**Username:** {{ .Env.CTF_USERNAME }}
+
+**Team:** {{ .Env.CTF_TEAM }}
+
+
+**Flags:** (0/X)
 
 ![ ](assets/scoreboard.png)
 ![ ](assets/team-score.png)
