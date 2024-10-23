@@ -1,6 +1,5 @@
 ![logo](assets/logo.png)
 {{ $values := (datasource "values") }}
-
 # {{ $values.general.ctf.name }}
 {{- range $values.general.ctf.urls }}
 - {{ . }}
@@ -8,6 +7,7 @@
 
 ## Description
 *{{ $values.general.ctf.description }}*
+
 
 # Results
 **Username:** {{ .Env.CTF_USERNAME }}
